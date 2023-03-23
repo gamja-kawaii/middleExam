@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    thead {
+        color: green;
+    }
+
+    tbody {
+        color: blue;
+    }
+
+    tfoot {
+        color: red;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <table border="1">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Februrary</td>
+            <td>$50</td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Februrary</td>
+                <td>$80</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: red;">
+            <col style="background-color:yellow;">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My First HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869207</td>
+            <td>My First CSS</td>
+            <td>$49</td>
+        </tr>
+    </table>
+    <form method="post" action="">
+        Id:<input type="text" name="user_name" /><br>
+        p/w:<input type="text" name="password" /><br>
+        <input type="submit" value="send" />
+        <input type="reset" value="reset" /><br>
+        <textarea name="memo" cols="20" rows="20" wrap="hard"></textarea><br>
+        <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female<br>
+        <input type="checkbox" name="interest" value="sport" />sport
+        <input type="checkbox" name="interest" value="watching movie" />watching movie
+        <input type="checkbox" name="interest" value="searcing internet" />searcing internet
+        <input type="checkbox" name="interest" value="singing" />singing<br>
+        <select size="1" name="sport">
+            <option>swimming</option>
+            <option>running</option>
+            <option>riding</option>
+            <option>baseball</option>
+            <input type="email"><input type="submit"><br>
+        <input type="search">
+        <input type="date" name="selectdate"/><br>
+        <input type="number" name="setnumber" value="5" min="3" max="20"/>
+        <input type="color" name="selectcolor" value="#ff00ff"/>
+        <input type="range" name="seletrange" value="5" min="3" max="20"/>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="internet explorer"></option>
+            <option value="firefox"></option>
+            <option value="chrome"></option>
+        </datalist>><br>
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="male">
+        <label for="female">female</label>
+        <input type="radio" name="sex" id="female"><br>
+        <p><label>name:<input type="text" name="username"></label></p>
+        <p><label>age:<input type="number" name="userage" ></label></p>
+        <fieldset>
+            <legend>
+                테두리
+            </legend>
+            안의내용
+        </fieldset>
+    </form>
+
+</body>
+
+
+</html>
